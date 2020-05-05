@@ -10,15 +10,17 @@
 <body>
     <header>
         <nav>
-            <span class="logo" id="air">Air India</span>
+            <span class="logo" id="air"><img src="https://www.soundsair.com/uploads/images/structure/SAlogo.svg" width="120px"></span>
             <span id="nav-icon" onclick="myfunction()"></span>
-            <ul class="menu-items" id="nav-item">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Flight Schedule</a></li>
-                <li><a href="#">Fare Rules</a></li>
-                <li><a href="#">Charter Flights</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Contact us</a></li>
+            <ul class="menu-items" id="nav-item"  >
+                <!-- <div class="toggle" id="nav-item" > -->
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Flight Schedule</a></li>
+                    <li><a href="#">Fare Rules</a></li>
+                    <li><a href="#">Charter Flights</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact us</a></li>
+                <!-- </div> -->
             </ul>
         </nav>
     </header>
@@ -27,7 +29,7 @@
             <div id="form-container">
                 <div id="heading">SEARCH FOR FLIGHTS</div>
                 <form>
-                <input type="radio" id="return-trip" name="one-two-way">
+                <input type="radio" id="return-trip" name="one-two-way" checked>
                 <label for="return-trip">Return Trip</label>
                 <input type="radio" id="one-way" name="one-two-way">
                 <label for="one-way">One Way</label><br>
@@ -38,7 +40,7 @@
                         aria-hidden="true"></i> Departing from
                     </label><br>
                     <select id="departing-location" name="departing-location" placeholder="select a location">
-                        <option value="" selected disabled>Select a location</option> 
+                        <option value="1" selected disabled>Select a location</option> 
                         <option value="delhi">
                             Delhi
                         </option>
@@ -64,8 +66,8 @@
                         <i class="fa fa-map-marker"
                         aria-hidden="true"></i> Travelling to
                     </label><br>
-                    <select id="destination" name="destination">
-                        <option value="" selected disabled>Select a location</option>
+                    <select id="destination" name="destination" >
+                        <option value="1" selected disabled>Select a location</option>
                         <option value="delhi">
                             Delhi
                         </option>
@@ -91,44 +93,45 @@
                         <i class="fa fa-calendar" aria-hidden="true">
                         </i> Departing
                     </label><br>
-                    <input type="text" name="departing-date" placeholder="Departure date"  id="departing-date" onfocus="this.type='date'">
+                    <input type="text" name="departing-date" placeholder="Departure date"  id="departing-date" onfocus="this.type='date'"  required>
                 </div>
                 <div id="arrival">
                     <label for="returning-date">
                         <i class="fa fa-calendar" aria-hidden="true">
                          </i> Returning
                      </label><br>
-                     <input type="text" name="returning-date" id="returning-date" value="Return Date" onfocus="this.type='date'"> 
+                     <input type="text" name="returning-date" id="returning-date" placeholder="Return Date" onfocus="this.type='date'"  required> 
                 </div>
                 <div id="adults-d">
                     <label for="adults">
                         <i class="fa fa-user-plus" aria-hidden="true"></i>
                         Adults
                     </label><br>
-                    <input type="number" id="adults" name="adults">
+                    <input type="number" id="adults" name="adults" value="0" onchange="max_limit(this)">
                 </div>
                 <div id="children-d">
                     <label for="children">
                         <i class="fa fa-user-plus" aria-hidden="true"></i>
                         Children
                     </label><br>
-                    <input type="number" id="children" name="children">
+                    <input type="number" id="children" name="children" value="0" onchange="max_limit(this)">
                 </div>
                 <div id="infants-d">
                     <label for="infants">
                         <i class="fa fa-user-plus" aria-hidden="true"></i>
                         Infants
                       </label><br>
-                      <input type="number" id="Infants" name="infants">
+                      <input type="number" id="infants" name="infants" value="0" onchange="max_limit(this)">
                 </div>
                 <div id="promo">
                     <label for="Promo-code">
+                        <i class="fa fa-list-alt" aria-hidden="true"></i>
                         Promo Code
                     </label><br>
-                    <input type="number" id="promo-code" name="promo-code">
+                    <input type="number" id="promo-code" name="promo-code" placeholder="Promo code">
                 </div>
                 <div id="search">
-                    <input type="button" value="Search for flights">
+                    <input type="button" value="Search for flights" onclick="validation()">
                 </div>
             </div>
                 </form>
@@ -355,10 +358,10 @@
         <!--footer-->
         <footer>
             <div id="footer-main-container"> 
-                 <a href="#" class="fa fa-facebook"></a>
-                 <a href="#" class="fa fa-youtube"></a>
-                 <a href="#" class="fa fa-instagram"></a>
-                 <a href="#" class="fa fa-google"></a><br>
+                 <a href="https://www.facebook.com/partook.jain" class="fa fa-facebook"></a>
+                 <a href="https://www.youtube.com/watch?v=f3CraIYhSoE" class="fa fa-youtube"></a>
+                 <a href="https://www.instagram.com/parteekjain_93/" class="fa fa-instagram"></a>
+                 <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSDXmhDbQHTLHxJjKqQdjQHgmKfwcPcCdGxWfZHfWvDCfTHVKSqFTFxTRRvttDlCvRpwFZlX" class="fa fa-google"></a><br>
                  <span>All Copyright Reserved &#169 2000-2023 Parteek</span><br>
                  <span>Server Time:</span><span id="timing"></span>
             </div>

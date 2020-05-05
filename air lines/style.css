@@ -4,7 +4,8 @@
 }
 /*navigation bar styling */
 header {
-    background-color:#ccc;
+    /* background-color:#ccc ; */
+    background-color: #333;
     position: sticky;
     top:0px ;
     z-index: 10 ;
@@ -15,8 +16,10 @@ nav {
     height:50px ;
     line-height: 50px ;
 }
-span.logo {
-    float:left;
+span.logo img {
+    box-sizing: border-box;
+    padding-top: 8px ;
+    display: inline-block ;
 }
 #nav-icon {
     display: none;
@@ -33,10 +36,10 @@ ul.menu-items li {
 ul.menu-items li a{
     text-decoration: none;
     padding:5px ;
-    color:black ;
+    color:white ;
 }
-ul.menu-items li:hover {
-    background-color:red;
+ul.menu-items li:hover a{
+    color:#fc7e2f;
 }
 /* section1 styling */
 section#sec1 {
@@ -51,7 +54,7 @@ section#sec1 {
 }
 #sec1-main-container {
     display: grid;
-    grid-template-columns: 40% 40% ;
+    grid-template-columns: 55% 35% ;
     grid-gap: 1rem ;
     justify-content: space-around;
     max-width: 1200px ;
@@ -61,7 +64,7 @@ section#sec1 {
 #form-container {
     box-sizing: border-box;
     background-color:rgba(0, 0, 0,0.5) ;
-    padding:20px ;
+    padding:15px ;
     color:white ;
     line-height:1.5 ;
 }
@@ -79,7 +82,7 @@ section#sec1 {
     grid-template-columns: 1fr 1fr ;
     justify-content: gap-around;
     grid-column-gap: 1rem ;
-    grid-row-gap: 3rem;
+    grid-row-gap: 2rem;
     color:white ;
 }
 input , select  {
@@ -93,11 +96,11 @@ input[type="radio"] {
     margin: 15px 10px ;
 }
 input[type="button"] {
-    margin-top:15px ;
+    margin-top:10px ;
     width:83% ;
     color:white ;
     border-radius: 5px;
-    height:30px;
+    height:40px;
     background-color: black;
 }
 #flights-details {
@@ -418,12 +421,13 @@ footer {
     }
     ul.menu-items li {
         display:inline-block;
-        background-color: aqua;
+        background-color:#444; 
+        color:white ;
         width:100% ;
         /* line-height:20px ; */
     }
-    ul.menu-items li:hover {
-        background-color:red;
+    ul.menu-items li:hover a {
+        color:#fc7e2f;
     }
     #nav-icon {
         display: block;
@@ -432,12 +436,27 @@ footer {
         width:50px ;
         text-align: center;
         font-size: 30px ;
-        background-color:red ;
+        background-color:#111 ;
+        color:white ;
         cursor:pointer ;
     }
     /* .menu-items {
         display:none ;
     } */
+    /* new items by chetan */
+    /* .toggle
+    {
+        display:none ;
+    }
+     .collapse
+    {
+        display:none;
+        float: right !important;;
+    }
+    .collapse li
+    {
+        display: inline-block !important;
+    }        */
     #nav-icon:before {
         content:'\f0c9 ' ;
         font-family: fontAwesome;

@@ -1,4 +1,12 @@
-{/* <script> */}
+/* <script> */
+    // function myfunction() {
+    //     var nav=document.getElementById("nav-item") ;
+    //     if(nav.className=="toggle") {
+    //         nav.className+="collapse" ;
+    //     } else {
+    //         nav.className="toggle" ;
+    //     }
+    //    }
        function myfunction() {
         var nav=document.getElementById("nav-item") ;
         if(nav.style.display=="none") {
@@ -8,6 +16,39 @@
         }
        }
     // </script>
+    // Form validation 
+    function max_limit(x) {
+        var y=x.value ;
+        y=Number(y) ;
+        if(y>=5) {
+            alert("Maximum four persons are allowed from each category.") ;
+        }
+    }
+    function validation() {
+        var x= document.getElementById("departing-location").value ;
+        x=Number(x) ;
+        var y = document.getElementById("destination").value ;
+        y=Number(y) ;
+        var dep=document.getElementById("departing-date").value ;
+        var arrival=document.getElementById("returning-date").value ;
+        var adult=document.getElementById("adults").value ;
+        adult=Number(adult) ;
+        var child=document.getElementById("children").value ;
+        child=Number(child) ;
+        var infant=document.getElementById("infants").value ;
+        infant=Number(infant) ;
+        if(x==1||y==1)  {
+            alert("Fill the departing location and destination properly .");
+        }else if(dep=="NULL"||arrival=="NULL"||new Date(dep).getTime() > new Date(arrival).getTime() ) {
+             alert("Enter correct departure and arrival date ") ;
+        } else if(adult>=5||child>=5||infant>=5)  {
+            alert("Maximum four persons are allowed from each category.")
+        } else {
+            window.location="file:///C:/Users/Dell/Desktop/html/webdparteek/COVID-19.html" ;
+        }
+
+    }
+
     // <script>
         if(Number(screen.availWidth) <= 768) {
             var indx=1 ;
