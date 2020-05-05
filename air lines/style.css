@@ -444,19 +444,19 @@ footer {
         display:none ;
     } */
     /* new items by chetan */
-    /* .toggle
+    .toggle
     {
         display:none ;
     }
      .collapse
     {
-        display:none;
-        float: right !important;;
+        display:block;
+        /* float: right !important;; */
     }
     .collapse li
     {
         display: inline-block !important;
-    }        */
+    }       
     #nav-icon:before {
         content:'\f0c9 ' ;
         font-family: fontAwesome;

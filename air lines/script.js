@@ -1,20 +1,20 @@
 /* <script> */
-    // function myfunction() {
-    //     var nav=document.getElementById("nav-item") ;
-    //     if(nav.className=="toggle") {
-    //         nav.className+="collapse" ;
-    //     } else {
-    //         nav.className="toggle" ;
-    //     }
-    //    }
-       function myfunction() {
+    function myfunction() {
         var nav=document.getElementById("nav-item") ;
-        if(nav.style.display=="none") {
-            nav.style.display="block" ;
+        if(nav.className=="toggle") {
+            nav.className+=" collapse" ;
         } else {
-            nav.style.display="none" ;
+            nav.className="toggle" ;
         }
        }
+    //    function myfunction() {
+    //     var nav=document.getElementById("nav-item") ;
+    //     if(nav.style.display=="none") {
+    //         nav.style.display="block" ;
+    //     } else {
+    //         nav.style.display="none" ;
+    //     }
+    //    }
     // </script>
     // Form validation 
     function max_limit(x) {
