@@ -2,7 +2,7 @@
     function myfunction() {
         var nav=document.getElementById("nav-item") ;
         if(nav.className=="toggle") {
-            nav.className+=" collapse" ;
+            nav.className += " collapse" ;
         } else {
             nav.className="toggle" ;
         }
@@ -52,8 +52,12 @@
     // <script>
         if(Number(screen.availWidth) <= 768) {
             var indx=1 ;
+            var dots=document.getElementsByClassName("dot") ;
+            dots[0].className +=" active" ;
         }  else {
             var indx=2 ;
+            var dots=document.getElementsByClassName("dot") ;
+            dots[1].className +=" active" ;
         }
         function currentSlide(x) {
             showSlides(indx=x) ;
@@ -71,24 +75,31 @@
             }
             if(Number(screen.availWidth) <= 768 ) {
                 if(n > slides.length)  {
-              indx=1 ;
-            }
-            if(n < 1)  {
-                indx=slides.length ;
-            }
+                    indx=1 ;
+                }
+                if(n < 1)  {
+                    indx=slides.length ;
+                }
                 slides[indx-1].style.display="block";
+                for(i=0 ; i< dots.length ; i++) {
+                    dots[i].className = dots[i].className.replace(" active" , "") ;
+                }
+                dots[indx-1].className +=" active" ;
             } 
             else {
                 dots[0].style.display="none" ;
                 if(n > slides.length)  {
-              indx=2 ;
-            }
-            if(n < 2)  {
-                indx=slides.length ;
-            }
+                    indx=2 ;
+                }
+                if(n < 2)  {
+                    indx=slides.length ;
+                }
                 slides[indx-1].style.display="block";
-            slides[indx-2].style.display="block";
-
+                slides[indx-2].style.display="block";
+                for(i=0 ; i< dots.length ; i++) {
+                    dots[i].className = dots[i].className.replace(" active" , "") ;
+                }
+                dots[indx-1].className +=" active" ;
             }
         }
     // </script>

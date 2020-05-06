@@ -252,6 +252,9 @@ div.link-container {
     display:inline-block ;
     transition:background-color o.6s ease ;
 }
+.dot:first-child {
+    display: none ;
+}
  .active {
     cursor:pointer ;
     height:10px ;
@@ -378,29 +381,29 @@ footer {
     padding:20px 10px ;
     color:white ;
     }
-    .fa {
-       padding:15px ;
-       font-size:20px ;
-       width:20
-       px ;
-       text-align:center ;
-       text-decoration: none;
-       margin:3px 1px ;
-       color:white ;
-       border-radius:17px ;
-    }
-    .fa-facebook {
-       background:#3b5998 ;
-    }
-    .fa-google {
-       background:#dd4b39 ;
-    }
-    .fa-youtube {
-       background:#125688 ;
-    }
-    .fa-instagram {
-       background: #cb2027 ;
-    }
+.fa {
+    padding:15px ;
+    font-size:20px ;
+    width:20
+    px ;
+    text-align:center ;
+    text-decoration: none;
+    margin:3px 1px ;
+    color:white ;
+    border-radius:17px ;
+}
+.fa-facebook {
+    background:#3b5998 ;
+}
+.fa-google {
+    background:#dd4b39 ;
+}
+.fa-youtube {
+    background:#125688 ;
+}
+.fa-instagram {
+    background: #cb2027 ;
+}
 @media ( max-width:768px) {
     /* ul.menu-items  {
         float:left ;
@@ -411,7 +414,7 @@ footer {
     } */
     /* navigation bar styling */
     ul.menu-items {
-        display:none ;
+        /* display:none ; */
         float:left ;
         clear:left ;
         width:100%;
@@ -444,7 +447,7 @@ footer {
         display:none ;
     } */
     /* new items by chetan */
-    .toggle
+     .toggle
     {
         display:none ;
     }
@@ -452,15 +455,15 @@ footer {
     {
         display:block;
         /* float: right !important;; */
-    }
+     }
     .collapse li
     {
         display: inline-block !important;
-    }       
+    }        
     #nav-icon:before {
         content:'\f0c9 ' ;
         font-family: fontAwesome;
-    }
+    } 
     /* section1 styling */
     #sec1 {
         padding:0px ;
@@ -483,6 +486,9 @@ footer {
     }
     .slides:nth-child(2) {
         display: none ;
+    }
+    .dot:first-child {
+        display: inline-block ;
     }
     /* section3 styling */
     #sec3-main-container {
