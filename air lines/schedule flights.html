@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flight schedule </title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="schedule flight style .css">
+</head>
+<body>
+    <header>
+        <nav>
+            <span class="logo" id="air"><img src="https://www.soundsair.com/uploads/images/structure/SAlogo.svg" width="120px"></span>
+            <span id="nav-icon" onclick="myfunction()"></span>
+            <ul class="menu-items"   >
+                <div class="toggle" id="nav-item" >
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#" class="active-link">Flight Schedule</a></li>
+                    <li><a href="#">Fare Rules</a></li>
+                    <li><a href="#">Charter Flights</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <section id="heading">
+      <span>  FLIGHT SCHEDULE FOR FLIGHTS ACROSS NZ-SOUNDS AIR <i class="fa fa-plane" aria-hidden="true"></i> </span> 
+    </section>
+    <section id="main-section">
+        <div id="main-section-div">
+            <div id="flights-location-container">
+                <div class="flight-box" onclick="display_flight_details(1)">
+                    <div class="more-info">
+                        <span>More Info</span>
+                    </div>
+                    <div class="details">
+                        <div class="route">
+                            Delhi &#8644 Jaipur
+                        </div>
+                        <div class="description">
+                            <div class="frequency">
+                                <span>Flights per week </span>
+                                20
+                            </div>
+                            <div class="travelling-time">
+                                <span> Approaximate flight time </span>
+                                55min
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flight-box">
+                    <div class="more-info">
+                        <span>More Info</span>
+                    </div>
+                    <div class="details">
+                        <div class="route">
+                            Jaipur &#8644 Amritsar
+                        </div>
+                        <div class="description">
+                            <div class="frequency">
+                                <span>Flights per week </span>
+                                18
+                            </div>
+                            <div class="travelling-time">
+                                <span> Approaximate flight time </span>
+                                1hr 35min
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flight-box">
+                    <div class="more-info">
+                        <span>More Info</span>
+                    </div>
+                    <div class="details">
+                        <div class="route">
+                            Mumbai &#8644 Jaipur
+                        </div>
+                        <div class="description">
+                            <div class="frequency">
+                                <span>Flights per week </span>
+                                14
+                            </div>
+                            <div class="travelling-time">
+                                <span> Approaximate flight time </span>
+                                1hr 45min
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flight-box">
+                    <div class="more-info">
+                        <span>More Info</span>
+                    </div>
+                    <div class="details">
+                        <div class="route">
+                            Delhi &#8644 Guwahati
+                        </div>
+                        <div class="description">
+                            <div class="frequency">
+                                <span>Flights per week </span>
+                                7
+                            </div>
+                            <div class="travelling-time">
+                                <span> Approaximate flight time </span>
+                                2hr 30min
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flight-box">
+                    <div class="more-info">
+                        <span>More Info</span>
+                    </div>
+                    <div class="details">
+                        <div class="route">
+                            Bengaluru &#8644 Delhi
+                        </div>
+                        <div class="description">
+                            <div class="frequency">
+                                <span>Flights per week </span>
+                                10
+                            </div>
+                            <div class="travelling-time">
+                                <span> Approaximate flight time </span>
+                                2hr 40min
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flight-box">
+                    <div class="more-info">
+                        <span>More Info</span>
+                    </div>
+                    <div class="details">
+                        <div class="route">
+                            Goa &#8644 Hyderabad
+                        </div>
+                        <div class="description">
+                            <div class="frequency">
+                                <span>Flights per week </span>
+                                12
+                            </div>
+                            <div class="travelling-time">
+                                <span> Approaximate flight time </span>
+                                1hr 25min
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flight-box">
+                    <div class="more-info">
+                        <span>More Info</span>
+                    </div>
+                    <div class="details">
+                        <div class="route">
+                            Hyd &#8644 Bengaluru
+                        </div>
+                        <div class="description">
+                            <div class="frequency">
+                                <span>Flights per week </span>
+                                20
+                            </div>
+                            <div class="travelling-time">
+                                <span> Approaximate flight time </span>
+                                50 min 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flight-box">
+                    <div class="more-info">
+                        <span>More Info</span>
+                    </div>
+                    <div class="details">
+                        <div class="route">
+                            Goa &#8644 Mumbai
+                        </div>
+                        <div class="description">
+                            <div class="frequency">
+                                <span>Flights per week </span>
+                                13
+                            </div>
+                            <div class="travelling-time">
+                                <span> Approaximate flight time </span>
+                             1hr 20min
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contact-details">
+                <span id="title">Email</span><br>
+                <span id="txt">parteek_11913030@nitkkr.ac.in</span><br><br>
+                <span id="title">Phone Numbers</span><br>
+                India only : <span id="txt">09034007326</span><br>
+                Tel:<span id="txt">+1-800-27250</span><br><br>
+                <span id="title">Mailing Address</span><br>
+                PO box 24 , Hisar.345.Haryana <br><br>
+                <span id="title">Reservation Office Hours</span><br>
+                Mon to Thrus : 07:30 t0 17:30 <br> 
+                Fri : 07:30 t0 19:00 <br>
+                Sat : 07:30 t0 17:30 <br>
+                sun : 09:00 to 19:00 <br>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="footer-main-container"> 
+            <a href="https://www.facebook.com/partook.jain" class="fa fa-facebook"></a>
+            <a href="https://www.youtube.com/watch?v=f3CraIYhSoE" class="fa fa-youtube"></a>
+            <a href="https://www.instagram.com/parteekjain_93/" class="fa fa-instagram"></a>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSDXmhDbQHTLHxJjKqQdjQHgmKfwcPcCdGxWfZHfWvDCfTHVKSqFTFxTRRvttDlCvRpwFZlX" class="fa fa-google"></a><br>
+            <span>All Copyright Reserved &#169 2000-2023 Parteek</span><br>
+            <span>Server Time:</span><span id="timing"></span>
+        </div>
+    </footer>
+    <script src="schedule flight script.js"></script>
+</body>
+</html>

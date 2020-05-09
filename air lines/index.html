@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nav bar</title>
+    <title>Sounds Air</title>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
     <link rel="stylesheet" href="style.css">
 </head>
@@ -14,8 +14,8 @@
             <span id="nav-icon" onclick="myfunction()"></span>
             <ul class="menu-items"   >
                 <div class="toggle" id="nav-item" >
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Flight Schedule</a></li>
+                    <li><a href="#" class="active-link">Home</a></li>
+                    <li><a href="schedule flights.html">Flight Schedule</a></li>
                     <li><a href="#">Fare Rules</a></li>
                     <li><a href="#">Charter Flights</a></li>
                     <li><a href="#">Gallery</a></li>
@@ -24,116 +24,135 @@
             </ul>
         </nav>
     </header>
+    <!-- section 1 -->
     <section id="sec1">
         <div id="sec1-main-container">
             <div id="form-container">
                 <div id="heading">SEARCH FOR FLIGHTS</div>
                 <form>
-                <input type="radio" id="return-trip" name="one-two-way" checked>
-                <label for="return-trip">Return Trip</label>
-                <input type="radio" id="one-way" name="one-two-way">
-                <label for="one-way">One Way</label><br>
-                <div id="layout">
-                <div id="departing-from">
-                    <label  for="departing-from">
-                        <i class="fa fa-map-marker"
-                        aria-hidden="true"></i> Departing from
-                    </label><br>
-                    <select id="departing-location" name="departing-location" placeholder="select a location">
-                        <option value="1" selected disabled>Select a location</option> 
-                        <option value="delhi">
-                            Delhi
-                        </option>
-                        <option value="chennai">
-                            Chennai
-                        </option>
-                        <option value="Mumbai">
-                            Mumbai
-                        </option>
-                        <opton value="patna">
-                            Patna
-                        </opton>
-                        <option value="Kolkata">
-                            Kolkata
-                        </option>
-                        <option value="amritsar">
-                            Amritsar
-                        </option>
-                    </select>
-                </div>
-                <div id="travelling-to">
-                    <label  for="travelling-to">
-                        <i class="fa fa-map-marker"
-                        aria-hidden="true"></i> Travelling to
-                    </label><br>
-                    <select id="destination" name="destination" >
-                        <option value="1" selected disabled>Select a location</option>
-                        <option value="delhi">
-                            Delhi
-                        </option>
-                        <option value="chennai">
-                            Chennai
-                        </option>
-                        <option value="Mumbai">
-                            Mumbai
-                        </option>
-                        <opton value="patna">
-                            Patna
-                        </opton>
-                        <option value="Kolkata">
-                            Kolkata
-                        </option>
-                        <option value="amritsar">
-                            Amritsar
-                        </option>
-                    </select>
-                </div>
-                <div id="departure">
-                    <label for="departing-date">
-                        <i class="fa fa-calendar" aria-hidden="true">
-                        </i> Departing
-                    </label><br>
-                    <input type="text" name="departing-date" placeholder="Departure date"  id="departing-date" onfocus="this.type='date'"  required>
-                </div>
-                <div id="arrival">
-                    <label for="returning-date">
-                        <i class="fa fa-calendar" aria-hidden="true">
-                         </i> Returning
-                     </label><br>
-                     <input type="text" name="returning-date" id="returning-date" placeholder="Return Date" onfocus="this.type='date'"  required> 
-                </div>
-                <div id="adults-d">
-                    <label for="adults">
-                        <i class="fa fa-user-plus" aria-hidden="true"></i>
-                        Adults
-                    </label><br>
-                    <input type="number" id="adults" name="adults" value="0" onchange="max_limit(this)">
-                </div>
-                <div id="children-d">
-                    <label for="children">
-                        <i class="fa fa-user-plus" aria-hidden="true"></i>
-                        Children
-                    </label><br>
-                    <input type="number" id="children" name="children" value="0" onchange="max_limit(this)">
-                </div>
-                <div id="infants-d">
-                    <label for="infants">
-                        <i class="fa fa-user-plus" aria-hidden="true"></i>
-                        Infants
-                      </label><br>
-                      <input type="number" id="infants" name="infants" value="0" onchange="max_limit(this)">
-                </div>
-                <div id="promo">
-                    <label for="Promo-code">
-                        <i class="fa fa-list-alt" aria-hidden="true"></i>
-                        Promo Code
-                    </label><br>
-                    <input type="number" id="promo-code" name="promo-code" placeholder="Promo code">
-                </div>
-                <div id="search">
-                    <input type="button" value="Search for flights" onclick="validation()">
-                </div>
-            </div>
+                    <input type="radio" id="return-trip" name="one-two-way" checked>
+                    <label for="return-trip">Return Trip</label>
+                    <input type="radio" id="one-way" name="one-two-way">
+                    <label for="one-way">One Way</label><br>
+                    <div id="layout">
+                        <div id="departing-from">
+                            <label  for="departing-from">
+                                <i class="fa fa-map-marker"
+                                aria-hidden="true"></i> Departing from
+                            </label><br>
+                            <select id="departing-location" name="departing-location" placeholder="select a location">
+                                <option value="1" selected disabled>Select a location</option> 
+                                <option value="delhi">
+                                    Delhi
+                                </option>
+                                <option value="jaipur">
+                                    Jaipur
+                                </option>
+                                <option value="Mumbai">
+                                    Mumbai
+                                </option>
+                                <opton value="bengaluru">
+                                    Bengaluru
+                                </opton>
+                                <option value="goa">
+                                    Goa
+                                </option>
+                                <option value="amritsar">
+                                    Amritsar
+                                </option>
+                                <opton value="nagpur">
+                                    Nagpur
+                                </opton>
+                                <option value="guwahati">
+                                    Guwahati
+                                </option>
+                                <option value="hyderabad">
+                                    Hyderabad
+                                </option>
+                            </select>
+                        </div>
+                        <div id="travelling-to">
+                            <label  for="travelling-to">
+                                <i class="fa fa-map-marker"
+                                aria-hidden="true"></i> Travelling to
+                            </label><br>
+                            <select id="destination" name="destination" >
+                                <option value="1" selected disabled>Select a location</option>
+                                <option value="delhi">
+                                    Delhi
+                                </option>
+                                <option value="jaipur">
+                                    Jaipur
+                                </option>
+                                <option value="Mumbai">
+                                    Mumbai
+                                </option>
+                                <opton value="bengaluru">
+                                    Bengaluru
+                                </opton>
+                                <option value="goa">
+                                    Goa
+                                </option>
+                                <option value="amritsar">
+                                    Amritsar
+                                </option>
+                                <opton value="nagpur">
+                                    Nagpur
+                                </opton>
+                                <option value="guwahati">
+                                    Guwahati
+                                </option>
+                                <option value="hyderabad">
+                                    Hyderabad
+                                </option>
+                            </select>
+                        </div>
+                        <div id="departure">
+                            <label for="departing-date">
+                                <i class="fa fa-calendar" aria-hidden="true">
+                                </i> Departing
+                            </label><br>
+                            <input type="text" name="departing-date" placeholder="Departure date"  id="departing-date" onfocus="this.type='date'"  required>
+                        </div>
+                        <div id="arrival">
+                            <label for="returning-date">
+                                <i class="fa fa-calendar" aria-hidden="true">
+                                </i> Returning
+                            </label><br>
+                            <input type="text" name="returning-date" id="returning-date" placeholder="Return Date" onfocus="this.type='date'"  required> 
+                        </div>
+                        <div id="adults-d">
+                            <label for="adults">
+                                <i class="fa fa-user-plus" aria-hidden="true"></i>
+                                Adults
+                            </label><br>
+                            <input type="number" id="adults" name="adults" value="0" onchange="max_limit(this)">
+                        </div>
+                        <div id="children-d">
+                            <label for="children">
+                                <i class="fa fa-user-plus" aria-hidden="true"></i>
+                                Children
+                            </label><br>
+                            <input type="number" id="children" name="children" value="0" onchange="max_limit(this)">
+                        </div>
+                        <div id="infants-d">
+                            <label for="infants">
+                                <i class="fa fa-user-plus" aria-hidden="true"></i>
+                                Infants
+                            </label><br>
+                            <input type="number" id="infants" name="infants" value="0" onchange="max_limit(this)">
+                        </div>
+                        <div id="promo">
+                            <label for="Promo-code">
+                                <i class="fa fa-list-alt" aria-hidden="true"></i>
+                                Promo Code
+                            </label><br>
+                            <input type="number" id="promo-code" name="promo-code" placeholder="Promo code">
+                        </div>
+                        <div id="search">
+                            <input type="button" value="Search for flights" onclick="validation()">
+                        </div>
+                    </div>
                 </form>
             </div>
             <div id="article">
@@ -143,174 +162,174 @@
                 <p>
                     During COVID-19 Alert Level 4 & 3 Sounds Air are still available to transport essential workers & freight. Our pilots, ground crew & aircraft are standing by to meet your needs. We have strict hygiene and cleaning procedures in place to ensure our clients safety & health. Contact charters@soundsair.com for all your essential travel requirements!
                 </p><br>
-                <span id="flights-details"><a href="#">FIND OUT WHERE WE FLY</a></span>
+                <span id="flights-details"><a href="schedule flights.html">FIND OUT WHERE WE FLY</a></span>
             </div>
         </div>
     </section>
+    <!-- section 2 -->
     <section id="sec2">
-        <!-- <div class="content-e"> -->
-            <div id="flight-heading">SCHEDULED FLIGHTS</div><hr><br>
-            <p>Click on a route to see timetables, airfares and destination information</p>
-            <div class="slide-container">
-                <a href="#" class="slides">
-                    <div class="link-container">
-                        <div class="more-info">
-                            <span>more info</span>
+        <div id="flight-heading">SCHEDULED FLIGHTS</div><hr><br>
+        <p>Click on a route to see timetables, airfares and destination information</p>
+        <div class="slide-container">
+            <a href="routes/1.html" class="slides">
+                <div class="link-container">
+                    <div class="more-info">
+                        <span>more info</span>
+                    </div>
+                    <div class="details">
+                        <div class="loc">Delhi &#8644 Jaipur</div>
+                        <div class="frequency">
+                            <span>Flights Per Week</span>
+                            20
                         </div>
-                        <div class="details">
-                            <div class="loc">Delhi &#8644 chennai1</div>
-                            <div class="frequency">
-                                <span>Flights Per Week</span>
-                                23
-                            </div>
-                            <div class="travel-time">
-                                <span>Appox flight time</span>
-                                30 min
-                            </div>
+                        <div class="travel-time">
+                            <span>Appox flight time</span>
+                            55 min
                         </div>
                     </div>
-                </a>
-                <a href="#" class="slides">
-                    <div class="link-container">
-                        <div class="more-info">
-                            <span>more info</span>
+                </div>
+            </a>
+            <a href="#" class="slides">
+                <div class="link-container">
+                    <div class="more-info">
+                        <span>more info</span>
+                    </div>
+                    <div class="details">
+                        <div class="loc">Jaipur &#8644 Amritsar</div>
+                        <div class="frequency">
+                            <span>Flights Per Week</span>
+                            18
                         </div>
-                        <div class="details">
-                            <div class="loc">Delhi &#8644 chennai2</div>
-                            <div class="frequency">
-                                <span>Flights Per Week</span>
-                                23
-                            </div>
-                            <div class="travel-time">
-                                <span>Appox flight time</span>
-                                30 min
-                            </div>
+                        <div class="travel-time">
+                            <span>Appox flight time</span>
+                            1hr 35min
                         </div>
                     </div>
-                </a>
-                <a href="#" class="slides">
-                    <div class="link-container">
-                        <div class="more-info">
-                            <span>more info</span>
+                </div>
+            </a>
+            <a href="#" class="slides">
+                <div class="link-container">
+                    <div class="more-info">
+                        <span>more info</span>
+                    </div>
+                    <div class="details">
+                        <div class="loc">Mumbai &#8644 Jaipur</div>
+                        <div class="frequency">
+                            <span>Flights Per Week</span>
+                            14
                         </div>
-                        <div class="details">
-                            <div class="loc">Delhi &#8644 chennai3</div>
-                            <div class="frequency">
-                                <span>Flights Per Week</span>
-                                23
-                            </div>
-                            <div class="travel-time">
-                                <span>Appox flight time</span>
-                                30 min
-                            </div>
+                        <div class="travel-time">
+                            <span>Appox flight time</span>
+                            1hr 45min
                         </div>
                     </div>
-                </a>
-                <a href="#" class="slides">
-                    <div class="link-container">
-                        <div class="more-info">
-                            <span>more info</span>
+                </div>
+            </a>
+            <a href="#" class="slides">
+                <div class="link-container">
+                    <div class="more-info">
+                        <span>more info</span>
+                    </div>
+                    <div class="details">
+                        <div class="loc">Delhi &#8644 Guwahati</div>
+                        <div class="frequency">
+                            <span>Flights Per Week</span>
+                            7
                         </div>
-                        <div class="details">
-                            <div class="loc">Delhi &#8644 chennai4</div>
-                            <div class="frequency">
-                                <span>Flights Per Week</span>
-                                23
-                            </div>
-                            <div class="travel-time">
-                                <span>Appox flight time</span>
-                                30 min
-                            </div>
+                        <div class="travel-time">
+                            <span>Appox flight time</span>
+                            2hr 30min
                         </div>
                     </div>
-                </a>
-                <a href="#" class="slides">
-                    <div class="link-container">
-                        <div class="more-info">
-                            <span>more info</span>
+                </div>
+            </a>
+            <a href="#" class="slides">
+                <div class="link-container">
+                    <div class="more-info">
+                        <span>more info</span>
+                    </div>
+                    <div class="details">
+                        <div class="loc">Bengaluru &#8644 Delhi</div>
+                        <div class="frequency">
+                            <span>Flights Per Week</span>
+                            10
                         </div>
-                        <div class="details">
-                            <div class="loc">Delhi &#8644 chennai5</div>
-                            <div class="frequency">
-                                <span>Flights Per Week</span>
-                                23
-                            </div>
-                            <div class="travel-time">
-                                <span>Appox flight time</span>
-                                30 min
-                            </div>
+                        <div class="travel-time">
+                            <span>Appox flight time</span>
+                            2hr 40min
                         </div>
                     </div>
-                </a>
-                <a href="#" class="slides">
-                    <div class="link-container">
-                        <div class="more-info">
-                            <span>more info</span>
+                </div>
+            </a>
+            <a href="#" class="slides">
+                <div class="link-container">
+                    <div class="more-info">
+                        <span>more info</span>
+                    </div>
+                    <div class="details">
+                        <div class="loc">Goa &#8644 Hyderabad</div>
+                        <div class="frequency">
+                            <span>Flights Per Week</span>
+                            12
                         </div>
-                        <div class="details">
-                            <div class="loc">Delhi &#8644 chennai6</div>
-                            <div class="frequency">
-                                <span>Flights Per Week</span>
-                                23
-                            </div>
-                            <div class="travel-time">
-                                <span>Appox flight time</span>
-                                30 min
-                            </div>
+                        <div class="travel-time">
+                            <span>Appox flight time</span>
+                            1hr 25min
                         </div>
                     </div>
-                </a>
-                <a href="#" class="slides">
-                    <div class="link-container">
-                        <div class="more-info">
-                            <span>more info</span>
+                </div>
+            </a>
+            <a href="#" class="slides">
+                <div class="link-container">
+                    <div class="more-info">
+                        <span>more info</span>
+                    </div>
+                    <div class="details">
+                        <div class="loc">Hyd &#8644 Bengaluru</div>
+                        <div class="frequency">
+                            <span>Flights Per Week</span>
+                            20
                         </div>
-                        <div class="details">
-                            <div class="loc">Delhi &#8644 chennai7</div>
-                            <div class="frequency">
-                                <span>Flights Per Week</span>
-                                23
-                            </div>
-                            <div class="travel-time">
-                                <span>Appox flight time</span>
-                                30 min
-                            </div>
+                        <div class="travel-time">
+                            <span>Appox flight time</span>
+                            50min
                         </div>
                     </div>
-                </a>
-                <a href="#" class="slides">
-                    <div class="link-container">
-                        <div class="more-info">
-                            <span>more info</span>
+                </div>
+            </a>
+            <a href="#" class="slides">
+                <div class="link-container">
+                    <div class="more-info">
+                        <span>more info</span>
+                    </div>
+                    <div class="details">
+                        <div class="loc">Goa &#8644 Mumbai</div>
+                        <div class="frequency">
+                            <span>Flights Per Week</span>
+                            13
                         </div>
-                        <div class="details">
-                            <div class="loc">Delhi &#8644 chennai8</div>
-                            <div class="frequency">
-                                <span>Flights Per Week</span>
-                                23
-                            </div>
-                            <div class="travel-time">
-                                <span>Appox flight time</span>
-                                30 min
-                            </div>
+                        <div class="travel-time">
+                            <span>Appox flight time</span>
+                            1hr 20min
                         </div>
                     </div>
-                </a>
-                <a id="prev" onclick="plusSlides(-1)" >&#10094</a>
-                <a id="next" onclick="plusSlides(1)" >&#10095</a>
-            </div>
-            <div id="bullets">
-                <span class="dot" onclick="currentSlide(1)" ></span>
-                <span class="dot" onclick="currentSlide(2)" ></span>
-                <span class="dot" onclick="currentSlide(3)" ></span>
-                <span class="dot" onclick="currentSlide(4)" ></span>
-                <span class="dot" onclick="currentSlide(5)" ></span>
-                <span class="dot" onclick="currentSlide(6)" ></span>
-                <span class="dot" onclick="currentSlide(7)" ></span>
-                <span class="dot" onclick="currentSlide(8)" ></span>
-            </div>
-        <!-- </div> -->
+                </div>
+            </a>
+            <a id="prev" onclick="plusSlides(-1)" >&#10094</a>
+            <a id="next" onclick="plusSlides(1)" >&#10095</a>
+        </div>
+        <div id="bullets">
+            <span class="dot" onclick="currentSlide(1)" ></span>
+            <span class="dot" onclick="currentSlide(2)" ></span>
+            <span class="dot" onclick="currentSlide(3)" ></span>
+            <span class="dot" onclick="currentSlide(4)" ></span>
+            <span class="dot" onclick="currentSlide(5)" ></span>
+            <span class="dot" onclick="currentSlide(6)" ></span>
+            <span class="dot" onclick="currentSlide(7)" ></span>
+            <span class="dot" onclick="currentSlide(8)" ></span>
+        </div>
     </section>
+    <!-- section 3 -->
     <section id="sec3">
         <div id="sec3-main-container">
             <div id="box1">
@@ -322,10 +341,11 @@
                 </div>
             </div>
             <div id="box2">
-                <a href="#" id="book-online"> BOOK ONLINE</a>
+                <a href="#form-container" id="book-online"> BOOK ONLINE</a>
             </div>
         </div>    
     </section>
+    <!-- section 4 -->
     <section id="sec4">
         <div id="sec4-main-container"> 
             <div id="content-box">
