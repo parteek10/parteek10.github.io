@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign in page</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+    <link rel="stylesheet" href="sign in style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <span class="logo" id="air"><img src="https://www.soundsair.com/uploads/images/structure/SAlogo.svg" width="120px"></span>
+            <span id="nav-icon" onclick="myfunction()"></span>
+            <ul class="menu-items"   >
+                <div class="toggle" id="nav-item" >
+                    <li><a href="#" class="active-link">Home</a></li>
+                    <li><a href="schedule flights.html">Flight Schedule</a></li>
+                    <li><a href="#">Fare Rules</a></li>
+                    <li><a href="#">Charter Flights</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+    <section id="heading">
+        <div>
+            <span><img src="https://www.soundsair.com/uploads/images/structure/SAlogo.svg" width="150px"></span>
+            <span id="text">Sign In</span>
+        </div>
+    </section>
+    <section id="form-section">
+        <div id="form-container">
+            <form action="/action_page.php" method="post" onsubmit="return validation(event)">
+                <div id="form-heading">
+                    <i class="fa fa-sign-in" aria-hidden="true"></i> Sign In
+                </div>
+                <div id="form-box">
+                    <div id="username">
+                        <label for="username">Username</label><br>
+                        <input type="text" name="user_name"  id="user_name" placeholder="username or email" onchange="name_validation(this)"><br>
+                        <div class="alert">This field is required</div>
+                    </div>
+                    <div>
+                        <label for="password">Password</label><br>
+                        <input type="password" name="password"  id="password" placeholder="password" onchange="password_validation(this)"><br>
+                        <div class="alert">This field is required</div>
+                    </div>
+                    <div id="forgot_password">Forgot Password ?</div>
+                    <input type="submit" value="Login">
+                </div>
+                <div id="signup"><span>Don't Have an account!<a href="#">Sign Up here</a></span></div>
+            </form>
+
+        </div>
+    </section>
+    <!-- footer  -->
+    <footer>
+        <div id="footer-main-container"> 
+                <a href="https://www.facebook.com/partook.jain" class="fa fa-facebook"></a>
+                <a href="https://www.youtube.com/watch?v=f3CraIYhSoE" class="fa fa-youtube"></a>
+                <a href="https://www.instagram.com/parteekjain_93/" class="fa fa-instagram"></a>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSDXmhDbQHTLHxJjKqQdjQHgmKfwcPcCdGxWfZHfWvDCfTHVKSqFTFxTRRvttDlCvRpwFZlX" class="fa fa-google"></a><br>
+                <span>All Copyright Reserved &#169 2000-2023 Parteek</span><br>
+                <span>Server Time:</span><span id="timing"></span>
+        </div>
+    </footer>
+    <script src="sign in script.js"></script>
+</body>
+</html>

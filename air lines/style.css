@@ -165,6 +165,7 @@ div.link-container {
     width:80px ;
     line-height:100px ;
     box-sizing: border-box;
+    color:black ;
 }
 .more-info span {
     background-color:white;
@@ -282,7 +283,7 @@ div.link-container {
 #sec3-main-container {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    max-width:900px ;
+    max-width:1200px ;
     padding:60px 60px;
     color:white ;
     margin:0 auto ;
@@ -318,7 +319,7 @@ div.link-container {
  }
  #sec4-main-container {
     display:grid ;
-    max-width: 1000px;
+    max-width: 1200px;
     margin:0 auto ;
     grid-template-columns : 40% 60%;
     justify-content: center;
@@ -497,9 +498,11 @@ footer {
     }
 }
 @media  (max-width:426px ) {
+    /* section1  */
     #layout {
         display: block ;
     }
+    /* section4  */
     #image-container {
         margin:10px auto ;
         grid-template-columns: 1fr;
