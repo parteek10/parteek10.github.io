@@ -67,12 +67,29 @@ section#heading div {
     font-weight: lighter;
     right:10% ;
 }
-/* form section  */
-#form-container {
-    max-width:500px ;
+ /* form section  */
+ section#main-section {
+    max-width:750px ;
+    margin:40px auto ;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+ }
+ #signup_heading {
+    border-bottom:0.2px solid #999 ;
+    font-size:25px ;
+    color:#666 ;
+    font-weight: lighter;
+    text-align:center ;
+    padding:20px ;
+}
+ #signup_heading span {
+     font-weight: bold;
+ }
+ /* form container  */
+ #form-container {
+    max-width:750px ;
     margin:40px auto ;
     border:1px solid #888 ;
-    background-color:#eee ;
+    background-color:#f4f4f4 ;
 }
 #form-container #form-heading {
     background-color: #555;
@@ -83,63 +100,95 @@ section#heading div {
     padding:10px ;
     font-size:16px ;
 }
+/* form box  */
 #form-box {
-    padding:10px 20px ;
-    position:relative ;
-}
-#form-box >div {
-    margin-top:15px ;
-}
-div.alert {
-    margin-bottom: 15px ;
-    background-color:#f2dede ;
-    /* background-color: #fab7b7; */
-    font-size:12px ;
     box-sizing: border-box;
-    padding:5px 10px ;
-    color:#444 ;
-    display:none ;
+    padding:15px ;
+    color:#666 ;
+    font-size:14px ;
 }
-input {
+#compulsory_field {
+    font-size:10px ;
+    margin:10px 0px 15px 0px ;
+}
+div.input_div  {
+    width:50% ;
+    float:left ;
+    margin-bottom:20px ;
+}
+div#user_div , div#sign_up_div  {
     width:100% ;
-    box-sizing: border-box;
-    height:30px ;
-    margin-top:5px ;
-    padding:5px 10px ;
-    font-size:12px ;
-    outline:0.2px solid #aaa ;
-    border:none ;
+    margin-bottom:20px ;
 }
-input[type="submit"] {
-    height:35px ;
+input { 
+    width:90% ;
+    margin-top:5px ;
+    height:30px ;
+    box-sizing: border-box;
+    padding:5px 20px ;
+ }
+ input:focus {
+     border:1px solid #777 ;
+     outline:none ;
+ }
+ div#user_div input , div#sign_up_div input {
+    width:95% ;
+}
+div#sign_up_div input {
     background-color: #fc7e2f;
     border:none ;
     color:white ;
-    font-size:16px ;
+    font-size:12px ;
 }
-input:focus {
-    outline-color:#333 ;
-    height:40px ;
+div.alert {
+    width:90% ;
+    background-color:#f2dede;
+    visibility:hidden ;
+    box-sizing: border-box;
+    height:22px ;
+    padding:5px 10px ;
+    font-size:12px ;
+    overflow: auto;
 }
-/* div#forgot_password   {
-    margin:10px 0 ;
-    margin-left:-3px ;
-    color:#fc7e2f ;
-    font-size: 14px ;
-    cursor:pointer ;
-} */
-#signup {
-    margin-top:25px ;
-    margin-bottom:20px ;
+div#user_div .alert {
+    width:95% ;
+    visibility: hidden;
+}
+div#pass_div label i {
+    padding:0 ;
+    color:black ;
     font-size:14px ;
-    margin-left :10px ;
-    color:#333 ;
+    cursor:pointer ;
 }
-#signup a {
-    text-decoration:none ;
-    color:#fc7e2f ;
-    font-size:16px ;
-    margin-left:4px ;
+div#pass_div {
+    position:relative ;
+}
+div#information_box {
+    position:absolute ;
+    height:80px ;
+    font-size:10px ;
+    width:150px ;
+    padding:4px ;
+    z-index:17 ;
+    top:-100px ;
+    background-color: #ddd;
+    border-radius:10px ;
+    display:none ;
+}
+div#information_box ul {
+list-style-type: none ;
+}
+div#information_box span {
+    font-weight: bold ;
+}
+#information_box::after {
+    content: " ";
+    position:absolute ;
+    top:100% ;
+    left:50% ;
+    border-width: 8px ;
+    border-style: solid;
+    border-color: #ddd transparent  transparent  transparent  ;
 }
 /* footer  */
 footer {
@@ -149,10 +198,9 @@ footer {
     color:white ;
 }
 .fa {
-    padding:15px ;
+    padding:15px ;-
     font-size:20px ;
-    width:20
-    px ;
+    width:20px ;
     text-align:center ;
     text-decoration: none;
     margin:3px 1px ;
@@ -214,5 +262,22 @@ footer {
     #nav-icon:before {
         content:'\f0c9 ' ;
         font-family: fontAwesome;
+    }
+    /* form styling  */
+    div.input_div {
+        width:100% ;
+        clear:both ;
+    }
+    input {
+        width:100% ;
+    }
+    div.alert {
+        width:100% ;
+    }
+    div#user_div input , div#sign_up_div input {
+        width:100% ;
+    }
+    div#user_div .alert {
+        width:100% ;
     }
 }

@@ -35,7 +35,7 @@ function validation() {
     } else if(adult>=5||child>=5||infant>=5)  {
         alert("Maximum four persons are allowed from each category.")
     } else {
-        window.location="file:///C:/Users/Dell/Desktop/html/webdparteek/COVID-19.html" ;
+        window.location="sign in.html" ;
     }
 
 }
