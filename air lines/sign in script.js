@@ -30,7 +30,7 @@ function password_validation(x) {
        x.style.backgroundColor="#ffffd5" ;
     } else if(Number(pass.length)<7) {
        ele[1].style.display="block" ;
-       ele[1].innerHTML="create a strong password of minimum length six characters" ;
+       ele[1].innerHTML="enter correct password (i.e. minimum 6 characters)" ;
        x.style.backgroundColor="#ffffd5" ;
     } else {
         ele[1].style.display="none" ;
