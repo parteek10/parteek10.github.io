@@ -1,3 +1,6 @@
+setTimeout(() => {
+    document.getElementById("loader_bg").style.display="none" ;
+},6000);
 //header 
 function myfunction() {
     var nav=document.getElementById("nav-item") ;

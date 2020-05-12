@@ -2,6 +2,91 @@
     padding:0 ;
     margin:0 ;
 }
+/* loader */
+#loader_bg {
+    position: fixed;
+    width:100% ;
+    height:100% ;
+    z-index:999999 ;
+    background-color: black;
+    color: white;
+    font-family:sans-serif ;
+    text-align:center ;
+    padding-top:180px ;
+    opacity:0.9 ;
+}
+#loader_bg span {
+    text-transform:uppercase ;
+    display: block ;
+    width:100% ;
+}
+.text1 {
+    font-size:60px ;
+    font-weight:700  ;
+    letter-spacing: 8px ;
+    margin-bottom: 20px ;
+    position:relative ;
+    animation:text 3s 1 ;
+    background:black ;
+}
+.text2 {
+    font-size: 30px ;
+    color:#ff5733 ;
+}
+.loader {
+    border:0 solid transparent ;
+    position:absolute ;
+    width:80px ;
+    height:80px ;
+    top:55vh ;
+    margin-top:-40px ;
+    left:50vw ;
+    margin-left:-40px ;
+    border-radius:50% ;
+}
+.loader:before , .loader:after {
+    content:'' ;
+    border:5px solid #ff5733 ;
+    box-shadow: 0 0 100px #ff5733 ;
+    border-radius:50% ;
+    width:inherit ;
+    height:inherit ;
+    position: absolute;
+    top:0 ;
+    left:0 ;
+    animation: loader 2s linear infinite ;
+    opacity:0 ; 
+}
+.loader:before {
+    animation-delay: .5s;
+}
+@keyframes text {
+    0% {
+        color:black ;
+        margin-bottom:-40px ;
+    }
+    30% {
+        letter-spacing:25px ;
+        margin-bottom:-40px ;
+    }
+    85% {
+        letter-spacing:8px ;
+        margin-bottom:-40px ;
+    }
+}
+@keyframes loader {
+    0% {
+        transform:scale(0) ;
+        opacity:0 ;
+    }
+    50% {
+        opacity:1 ;
+    }
+    100% {
+        transform: scale(0.8);
+        opacity:0 ;
+    }
+}
 /*navigation bar styling */
 header {
     background-color: #333;
@@ -276,6 +361,14 @@ div.link-container {
 .dot:hover {
     background-color: #717171;
 }
+.fade {
+    animation-name:fade ;
+    animation-duration:1.5s ;
+}
+@keyframes fade {
+    from {opacity:.4} 
+    to {opacity:1}
+}
 /* section3 styling */
 #sec3 {
     background-color: #fc7e2f ;
@@ -498,6 +591,12 @@ footer {
     }
 }
 @media  (max-width:426px ) {
+    .text1 {
+        font-size:40px ;
+    }
+    .text2 {
+        font-size: 20px ;
+    }
     /* section1  */
     #layout {
         display: block ;
