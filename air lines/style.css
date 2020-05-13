@@ -357,7 +357,8 @@ div.link-container {
 #book-online {
     color:white ;
     background-color: #666;
-    padding:15px ; 
+    padding:12px ; 
+    font-size:18px;
     background-color: #444;
     border-radius:20px ;
     text-decoration: none;
@@ -474,10 +475,10 @@ div.link-container {
         line-height: 1.5;
         margin:0 auto ; 
     }
-    #book-online {
+    /* #book-online {
         padding:5px ;
         font-size:15px ;
-    }
+    } */
     /* section4 styling  */
     #sec4-main-container {
         padding:10px ;
