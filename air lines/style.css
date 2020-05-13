@@ -142,7 +142,7 @@ input , select  {
 input[type="radio"] {
     width:auto ;
     color:white ;
-    margin: 15px 10px ;
+    margin: 10px 10px ;
 }
 input[type="button"] {
     margin-top:10px ;
@@ -153,6 +153,9 @@ input[type="button"] {
     background-color: black;
     outline:1px solid white ;
     border:none ;
+}
+#layout i{
+    padding:0px ;
 }
 #flights-details {
     background-color: #fc7e2f  ;
@@ -471,8 +474,8 @@ div.link-container {
         margin:0 auto ; 
     }
     #book-online {
-        padding:10px ;
-        font-size: 20px ;
+        padding:5px ;
+        font-size:15px ;
     }
     /* section4 styling  */
     #sec4-main-container {
