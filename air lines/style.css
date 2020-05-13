@@ -357,11 +357,14 @@ div.link-container {
 #book-online {
     color:white ;
     background-color: #666;
-    padding:12px ; 
-    font-size:18px;
+    padding:25px ; 
+    font-size:12px;
     background-color: #444;
     border-radius:20px ;
     text-decoration: none;
+    word-break: keep-all;
+    display: block;
+    min-width:80px ;
 }
 #box1 div:nth-child(2) {
   font-weight: bold;

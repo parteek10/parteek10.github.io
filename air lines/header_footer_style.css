@@ -46,9 +46,10 @@ footer {
     color:white ;
 }
 .fa {
-    padding:15px ;
+    padding:12px ;
     font-size:20px ;
-    width:20px ;
+    width:35px ;
+    /* height:20px ; */
     text-align:center ;
     text-decoration: none;
     margin:3px 1px ;
@@ -111,5 +112,10 @@ footer {
     #nav-icon:before {
         content:'\f0c9 ' ;
         font-family: fontAwesome;
+    }
+    .fa {
+        padding:15px ;
+        width:20px ;
+        font-size:20px ;
     }
 }
