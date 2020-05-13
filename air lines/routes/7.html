@@ -6,6 +6,7 @@
     <title>Hyderabad &#8644 Bengaluru</title>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
     <link rel="stylesheet" href="flight-route-details-style.css">
+    <link rel="stylesheet" href="../header_footer_style.css">
 </head>
 <body>
     <header>
@@ -16,10 +17,10 @@
                 <div class="toggle" id="nav-item" >
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="../schedule flights.html" class="active-link">Flight Schedule</a></li>
-                    <li><a href="#">Fare Rules</a></li>
-                    <li><a href="#">Charter Flights</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Contact us</a></li>
+                    <li><a href="../fare_rules.html">Fare Rules</a></li>
+                    <li><a href="../sign in.html">Sign in</a></li>
+                    <li><a href="../image gallery/gallery.html">Gallery</a></li>
+                    <li><a href="../about_us.html">About us</a></li>
                 </div>
             </ul>
         </nav>
@@ -101,7 +102,7 @@
                         Bengaluru
                     </option>
                 </select><br>
-                <input type="submit" name="booking" id="booking" value="BOOK FLIGHT">
+                <input type="submit" name="booking" id="booking" value="BOOK FLIGHT" onclick="window.location='../index.html#form-container'">
             </div>
         </div>
     </section>
@@ -115,6 +116,16 @@
                 <span>Server Time:</span><span id="timing"></span>
         </div>
     </footer>
-    <script src="flight-route-details-script.js"></script>
+    <script>
+        function accord_display(indx) {
+            var x=document.getElementsByClassName("title-content") ;
+            if(x[indx].style.display=="block")  {
+                x[indx].style.display="none" ;
+            } else {
+                x[indx].style.display="block" ;
+            }
+        }
+    </script>
+    <script src="../header_footer_script.js"></script>
 </body>
 </html>

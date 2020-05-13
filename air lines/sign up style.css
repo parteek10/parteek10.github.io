@@ -1,47 +1,7 @@
 * {
     padding:0 ;
     margin:0 ;
-}
-/*navigation bar styling */
-header {
-    background-color: #333;
-    position: sticky;
-    top:0px ;
-    z-index: 10 ;
-}
-nav {
-    max-width: 1200px;
-    margin:0px auto ;
-    height:50px ;
-    line-height: 50px ;
-}
-span.logo img {
-    box-sizing: border-box;
-    padding-top: 8px ;
-    display: inline-block ;
-}
-#nav-icon {
-    display: none;
-}
-ul.menu-items {
-    list-style-type: none;
-    margin:0 ;
-    padding:0 ;
-    float:right ;
-}
-ul.menu-items li {
-    display:inline ;
-}
-ul.menu-items li a{
-    text-decoration: none;
-    padding:5px ;
-    color:white ;
-}
-ul.menu-items li a.active-link {
-    color:#fc7e2f ;
-}
-ul.menu-items li:hover a{
-    color:#fc7e2f;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 /* heading section styling  */
 section#heading {
@@ -72,6 +32,7 @@ section#heading div {
     max-width:750px ;
     margin:40px auto ;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding:10px ;
  }
  #signup_heading {
     border-bottom:0.2px solid #999 ;
@@ -90,6 +51,7 @@ section#heading div {
     margin:40px auto ;
     border:1px solid #888 ;
     background-color:#f4f4f4 ;
+    box-shadow:3px 3px 5px 2px #bbb ;
 }
 #form-container #form-heading {
     background-color: #555;
@@ -139,6 +101,13 @@ div#sign_up_div input {
     border:none ;
     color:white ;
     font-size:12px ;
+}
+input[type="submit"] {
+    height:40px ;
+}
+input[type="submit"]:hover {
+    border:2px solid white ;
+    cursor: pointer;
 }
 div.alert {
     width:90% ;
@@ -190,79 +159,7 @@ div#information_box span {
     border-style: solid;
     border-color: #ddd transparent  transparent  transparent  ;
 }
-/* footer  */
-footer {
-    background-color: #333;
-    text-align: center;
-    padding:20px 10px ;
-    color:white ;
-}
-.fa {
-    padding:15px ;-
-    font-size:20px ;
-    width:20px ;
-    text-align:center ;
-    text-decoration: none;
-    margin:3px 1px ;
-    color:white ;
-    border-radius:17px ;
-}
-.fa-facebook {
-    background:#3b5998 ;
-}
-.fa-google {
-    background:#dd4b39 ;
-}
-.fa-youtube {
-    background:#125688 ;
-}
-.fa-instagram {
-    background: #cb2027 ;
-}
-
 @media ( max-width:768px) {
-    /* navigation bar styling */
-    ul.menu-items {
-        float:left ;
-        clear:left ;
-        width:100%;
-        text-align:center ;
-        line-height:25px ;
-        font-size:12px ;
-    }
-    ul.menu-items li {
-        display:inline-block;
-        background-color:#444; 
-        color:white ;
-        width:100% ;
-    }
-    ul.menu-items li:hover a {
-        color:#fc7e2f;
-    }
-    #nav-icon {
-        display: block;
-        float:right ;
-        height:50px ;
-        width:50px ;
-        text-align: center;
-        font-size: 30px ;
-        background-color:#111 ;
-        color:white ;
-        cursor:pointer ;
-    }
-     .toggle  {
-        display:none ;
-    }
-     .collapse {
-        display:block;
-     }
-    .collapse li {
-        display: inline-block !important;
-    }        
-    #nav-icon:before {
-        content:'\f0c9 ' ;
-        font-family: fontAwesome;
-    }
     /* form styling  */
     div.input_div {
         width:100% ;

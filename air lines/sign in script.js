@@ -1,12 +1,3 @@
-//header 
-function myfunction() {
-    var nav=document.getElementById("nav-item") ;
-    if(nav.className=="toggle") {
-        nav.className += " collapse" ;
-    } else {
-        nav.className="toggle" ;
-    }
-}
 // form validation 
 function name_validation(x)  {
     var name = x.value ;
@@ -62,7 +53,7 @@ function validation(e)  {
        y.style.backgroundColor="#ffffd5" ;
     } else if(Number(pass.length)<7) {
        ele[1].style.display="block" ;
-       ele[1].innerHTML="create a strong password of minimum length six characters" ;
+       ele[1].innerHTML="enter correct password" ;
        flag=0 ;
        y.style.backgroundColor="#ffffd5" ;
     } else {
@@ -76,8 +67,3 @@ function validation(e)  {
         return false ;
     }
 }
-//footer
-var time =document.getElementById("timing") ;
-setInterval(function () {
-    time.innerHTML=Date() ;
-} , 10) ;

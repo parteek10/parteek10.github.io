@@ -3,53 +3,13 @@
     margin:0 ;
     font-family:Verdana, Geneva, Tahoma, sans-serif ;
 }
-/* header styling  */
-header {
-    background-color: #333;
-    position: sticky;
-    top:0px ;
-    z-index: 10 ;
-}
-nav {
-    max-width: 1200px;
-    margin:0px auto ;
-    height:50px ;
-    line-height: 50px ;
-}
-span.logo img {
-    box-sizing: border-box;
-    padding-top: 8px ;
-    display: inline-block ;
-}
-#nav-icon {
-    display: none;
-}
-ul.menu-items {
-    list-style-type: none;
-    margin:0 ;
-    padding:0 ;
-    float:right ;
-}
-ul.menu-items li {
-    display:inline ;
-}
-ul.menu-items li a{
-    text-decoration: none;
-    padding:5px ;
-    color:white ;
-}
-ul.menu-items li a.active-link {
-    color:#fc7e2f ;
-}
-ul.menu-items li:hover a{
-    color:#fc7e2f;
-}
 /* heading  */ 
 #heading {
     background-color: #e66120;
     color:white ;
     box-sizing: border-box;
     padding:20px ;
+    text-align: center;
 }
 section#heading span {
     border-bottom:1px solid white ;
@@ -150,83 +110,11 @@ input[type="submit"] {
     outline:none ;
     border:none ;
 }
-/* footer styling */
-footer {
-    background-color: #333;
-    text-align: center;
-    padding:20px 10px ;
-    color:white ;
-    }
-.fa {
-    padding:15px ;
-    font-size:20px ;
-    width:20
-    px ;
-    text-align:center ;
-    text-decoration: none;
-    margin:3px 1px ;
-    color:white ;
-    border-radius:17px ;
+input[type="submit"]:hover {
+    cursor:pointer ;
+    border:1px solid white;
 }
-.fa-facebook {
-    background:#3b5998 ;
-}
-.fa-google {
-    background:#dd4b39 ;
-}
-.fa-youtube {
-    background:#125688 ;
-}
-.fa-instagram {
-    background: #cb2027 ;
-}
-
 @media ( max-width:768px) { 
-    /* navigation bar  */
-    ul.menu-items {
-        float:left ;
-        clear:left ;
-        width:100%;
-        text-align:center ;
-        line-height:25px ;
-        font-size:12px ;
-    }
-    ul.menu-items li {
-        display:inline-block;
-        background-color:#444; 
-        color:white ;
-        width:100% ;
-    }
-    ul.menu-items li:hover a {
-        color:#fc7e2f;
-    }
-    #nav-icon {
-        display: block;
-        float:right ;
-        height:50px ;
-        width:50px ;
-        text-align: center;
-        font-size: 30px ;
-        background-color:#111 ;
-        color:white ;
-        cursor:pointer ;
-    }
-     .toggle
-    {
-        display:none ;
-    }
-     .collapse
-    {
-        display:block;
-     }
-    .collapse li
-    {
-        display: inline-block !important;
-    }        
-    #nav-icon:before {
-        content:'\f0c9 ' ;
-        font-family: fontAwesome;
-    }
     /* main-section  */
     section#main-section {
         padding:10px ;

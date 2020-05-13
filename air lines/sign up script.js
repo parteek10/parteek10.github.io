@@ -1,12 +1,3 @@
-//header 
-function myfunction() {
-    var nav=document.getElementById("nav-item") ;
-    if(nav.className=="toggle") {
-        nav.className += " collapse" ;
-    } else {
-        nav.className="toggle" ;
-    }
-}
 // form validation  
 function name_validation(x , y) {
     var name=x.value ;
@@ -28,7 +19,6 @@ function email_validation(x)  {
     var pattern=/^[A-Za-z@._0-9]+$/ ;
     if(name.match(pattern) && name.indexOf("@")!=-1 && name.indexOf(".")!=-1 && name.indexOf("@")+2 < name.indexOf("."))  {
         ele[2].style.visibility="hidden" ;
-        // x.value = x.value.toUpperCase() ;
         x.style.backgroundColor="white" ;
     }  else {
         x.style.backgroundColor="#ffffd5" ;
@@ -107,11 +97,6 @@ function validation(e) {
         alert("Signed In successfully.") ;
         window.location ="index.html" ;
     } else {
-        alert("enter data correctly ") ;
+        alert("enter all values correctly ") ;
     }
 }
-//footer
-var time =document.getElementById("timing") ;
-setInterval(function () {
-    time.innerHTML=Date() ;
-} , 10) ;

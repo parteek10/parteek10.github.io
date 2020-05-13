@@ -6,6 +6,7 @@
     <title>flight schedule </title>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
     <link rel="stylesheet" href="schedule flight style .css">
+    <link rel="stylesheet" href="header_footer_style.css">
 </head>
 <body>
     <header>
@@ -16,10 +17,10 @@
                 <div class="toggle" id="nav-item" >
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#" class="active-link">Flight Schedule</a></li>
-                    <li><a href="#">Fare Rules</a></li>
-                    <li><a href="#">Charter Flights</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Contact us</a></li>
+                    <li><a href="fare_rules.html">Fare Rules</a></li>
+                    <li><a href="sign in.html">Sign in</a></li>
+                    <li><a href="image gallery/gallery.html">Gallery</a></li>
+                    <li><a href="about_us.html">About us</a></li>
                 </div>
             </ul>
         </nav>
@@ -217,6 +218,11 @@
             <span>Server Time:</span><span id="timing"></span>
         </div>
     </footer>
-    <script src="schedule flight script.js"></script>
+    <script src="header_footer_script.js"></script>
+    <script >
+        function display_flight_details(indx)  {
+            window.location="routes/"+indx+".html" ;
+        }
+    </script>
 </body>
 </html>

@@ -5,169 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About us</title>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
-    <style>
-        * {
-        padding:0 ;
-        margin:0 ;
-        font-family:Verdana, Geneva, Tahoma, sans-serif ;
-        }
-        /* header styling  */
-        header {
-            background-color: #333;
-            position: sticky;
-            top:0px ;
-            z-index: 10 ;
-        }
-        nav {
-            max-width: 1200px;
-            margin:0px auto ;
-            height:50px ;
-            line-height: 50px ;
-        }
-        span.logo img {
-            box-sizing: border-box;
-            padding-top: 8px ;
-            display: inline-block ;
-        }
-        #nav-icon {
-            display: none;
-        }
-        ul.menu-items {
-            list-style-type: none;
-            margin:0 ;
-            padding:0 ;
-            float:right ;
-        }
-        ul.menu-items li {
-            display:inline ;
-        }
-        ul.menu-items li a{
-            text-decoration: none;
-            padding:5px ;
-            color:white ;
-        }
-        ul.menu-items li a.active-link {
-            color:#fc7e2f ;
-        }
-        ul.menu-items li:hover a{
-            color:#fc7e2f;
-        }
-        /* main section  */
-        section#main-section {
-            
-            background-color: whitesmoke;
-        }
-        div#main-container {
-            max-width:1080px ;
-            display: grid;
-            grid-template-columns: 2fr 2fr;
-            margin:0 auto ;
-            height:40vw;
-            align-items: center;
-            font-size:2vw ;
-            line-height:1.5 ;
-            font-family: arial;
-            grid-gap:2rem ;
-        }
-        div#image {
-            justify-self: center;
-        }
-        #image img {
-                height:20vw ;
-                width:20vw ;
-                border-radius:10px  ;
-                border:1px solid white ;
-                box-shadow:0 0 4px 1px #888;
-        }
-        div#details {
-            justify-self:left ;
-        }
-        /* footer  */
-        footer {
-            background-color: #333;
-            text-align: center;
-            padding:20px 10px ;
-            color:white ;
-        }
-        .fa {
-            padding:15px ;
-            font-size:20px ;
-            width:20
-            px ;
-            text-align:center ;
-            text-decoration: none;
-            margin:3px 1px ;
-            color:white ;
-            border-radius:17px ;
-        }
-        .fa-facebook {
-            background:#3b5998 ;
-        }
-        .fa-google {
-            background:#dd4b39 ;
-        }
-        .fa-youtube {
-            background:#125688 ;
-        }
-        .fa-instagram {
-            background: #cb2027 ;
-        }
-        @media ( max-width:768px) { 
-            /* navigation bar  */
-            ul.menu-items {
-                float:left ;
-                clear:left ;
-                width:100%;
-                text-align:center ;
-                line-height:25px ;
-                font-size:12px ;
-            }
-            ul.menu-items li {
-                display:inline-block;
-                background-color:#444; 
-                color:white ;
-                width:100% ;
-            }
-            ul.menu-items li:hover a {
-                color:#fc7e2f;
-            }
-            #nav-icon {
-                display: block;
-                float:right ;
-                height:50px ;
-                width:50px ;
-                text-align: center;
-                font-size: 30px ;
-                background-color:#111 ;
-                color:white ;
-                cursor:pointer ;
-            }
-            .toggle {
-                display:none ;
-            }
-            .collapse {
-                display:block;
-            }
-            .collapse li {
-                display: inline-block !important;
-            }        
-            #nav-icon:before {
-                content:'\f0c9 ' ;
-                font-family: fontAwesome;
-            }
-            div#main-container {
-                /* grid-template-columns: 1fr ;
-                grid-template-rows: 1fr 1fr; */
-                display:block ;
-                padding-top:50px ;
-            }
-            div#details {
-                position:relative ;
-                left:calc(50vw) ;
-                top:-20vw ;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="header_footer_style.css" >
+    <link rel="stylesheet" href="about_us_style.css">
 </head>
 <body>
     <header>
@@ -176,12 +15,12 @@
             <span id="nav-icon" onclick="myfunction()"></span>
             <ul class="menu-items"   >
                 <div class="toggle" id="nav-item" >
-                    <li><a href="#" class="active-link">Home</a></li>
+                    <li><a href="index.html" >Home</a></li>
                     <li><a href="schedule flights.html">Flight Schedule</a></li>
-                    <li><a href="#">Fare Rules</a></li>
-                    <li><a href="#">Charter Flights</a></li>
-                    <li><a href="#">Gallery</a></li>
-                    <li><a href="#">Contact us</a></li>
+                    <li><a href="fare_rules.html">Fare Rules</a></li>
+                    <li><a href="sign in.html">Sign in</a></li>
+                    <li><a href="image gallery/gallery.html">Gallery</a></li>
+                    <li><a href="#" class="active-link">About us</a></li>
                 </div>
             </ul>
         </nav>
@@ -202,6 +41,22 @@
             </div>
         </div>
     </section>
+    <section id="sec3">
+        <div id="sec3-main-container">
+            <div id="box1">
+                <div>
+                    To book a reservation or find out more about our services 
+                </div>
+                <div>
+                    CALL US ON 09034007326
+                </div>
+            </div>
+            <div id="box2">
+                <a href="index.html#form-container" id="book-online"> BOOK ONLINE</a>
+            </div>
+        </div>    
+    </section>
+
     <footer>
         <div id="footer-main-container"> 
                 <a href="https://www.facebook.com/partook.jain" class="fa fa-facebook"></a>
@@ -212,19 +67,5 @@
                 <span>Server Time:</span><span id="timing"></span>
         </div>
     </footer>
-    <script>
-        //header
-        function myfunction() {
-            var nav=document.getElementById("nav-item") ;
-            if(nav.className=="toggle") {
-                nav.className += " collapse" ;
-            } else {
-                nav.className="toggle" ;
-            }
-        }
-        //footer
-        var time =document.getElementById("timing") ;
-        setInterval(function () {time.innerHTML=Date() ;} , 10) ;
-    </script>
-</body>
+<script src="header_footer_script.js"> </script>
 </html>

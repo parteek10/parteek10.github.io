@@ -1,15 +1,6 @@
 setTimeout(() => {
     document.getElementById("loader_bg").style.display="none" ;
-},6000);
-//header 
-function myfunction() {
-    var nav=document.getElementById("nav-item") ;
-    if(nav.className=="toggle") {
-        nav.className += " collapse" ;
-    } else {
-        nav.className="toggle" ;
-    }
-}
+},4000);
 //form validation
 function max_limit(x) {
     var y=x.value ;
@@ -40,7 +31,6 @@ function validation() {
     } else {
         window.location="sign in.html" ;
     }
-
 }
 // slides
 if(Number(screen.availWidth) <= 768) {
@@ -95,8 +85,3 @@ function showSlides(n) {
         dots[indx-1].className +=" active" ;
     }
 }
-//footer
-var time =document.getElementById("timing") ;
-setInterval(function () {
-    time.innerHTML=Date() ;
-} , 10) ;
