@@ -156,6 +156,7 @@ input[type="button"] {
 }
 #layout i{
     padding:0px ;
+    margin:0 ;
 }
 #flights-details {
     background-color: #fc7e2f  ;
